@@ -1,0 +1,61 @@
+/* Projects.css*/
+.projects-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Grid layout for project cards */
+  .projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  /* Styling for each project card */
+  .project-card {
+    background-color: #ddc5c0;
+    border: 1px solid #c9ada7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Add hover effect for project cards */
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-links {
+    margin-top: auto; /* Push the links to the bottom */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Styling for project links */
+  .project-link {
+    /* margin-top: 20px; */
+    display: inline-block;
+    /* margin-right: 10px; */
+    color: #22223b; /* link color */
+    text-decoration: none;
+    padding: 5px 10px; /* Adds padding for click area */
+    border: 1px solid #ddc5c0;
+    border-radius: 5px;
+    transition: color 0.2s;
+  }
+  
+  .project-link:hover {
+    color: #f2e9e4;
+    background-color: #c9ada7;
+    transition: color 0.2s;
+  }

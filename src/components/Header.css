@@ -1,0 +1,37 @@
+.header {
+    position: fixed; /* Sticks the header to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    background-color: #a79da5;
+    padding: 10px 20px;
+    color: #22223b;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-evenly; /* Spreads out the content */
+    align-items: center;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures the header stays on top */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px; /* Add space between links */
+    flex: 1; /* Takes up remaining space */
+    overflow: hidden; /* Avoid content spilling */
+    justify-content: flex-start; /* Align links to the right */
+    text-overflow: ellipsis; /* Adds "..." for overflowed text */
+  }
+  
+  .nav-links a {
+    color: #22223b;
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding for click area */
+    border: 1px solid #a79da5;
+    border-radius: 5px;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #737894; /* different shade for hover effect */
+    color: #f2e9e4;
+  }
